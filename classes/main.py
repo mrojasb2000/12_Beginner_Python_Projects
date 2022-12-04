@@ -1,24 +1,19 @@
 class Item:
-    def __init__(self):
-        print("I'm created")
+    
+    def __init__(self, name):
+        print(f"An instance created: {name}")
 
     def calculate_total_price(self):
         return self.price * self.quantity
 
-item1 = Item()
-item1.name = "Phone"
-item1.price = 100
-item1.quantity = 5
-print(item1.calculate_total_price())
+item1 = Item("Phone")
+#print(item1.calculate_total_price())
 
-item2 = Item()
-item2.name = "Phone"
-item2.price = 1000
-item2.quantity = 3
-print(item2.calculate_total_price())
+item2 = Item("Laptop")
+#print(item2.calculate_total_price())
 
 # Get type
-print(type(item1))
-print(type(item1.name))
-print(type(item1.price))
-print(type(item1.quantity))
+#print(type(item1))
+#print(type(item1.name))
+#print(type(item1.price))
+#print(type(item1.quantity))
