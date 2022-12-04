@@ -14,9 +14,3 @@ print(item1.calculate_total_price())
 
 item2 = Item("Laptop", 1000, 3)
 print(item2.calculate_total_price())
-
-# Get type
-#print(type(item1))
-#print(type(item1.name))
-#print(type(item1.price))
-#print(type(item1.quantity))
