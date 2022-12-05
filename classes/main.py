@@ -13,4 +13,6 @@ item1 = Item("Phone", 100)
 print(item1.calculate_total_price())
 
 item2 = Item("Laptop", 1000, 3)
+item2.has_numpad = False
 print(item2.calculate_total_price())
+
