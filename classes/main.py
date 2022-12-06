@@ -1,5 +1,5 @@
 class Item:
-    
+    pay_rate = 0.8 # The pay after 20% discount
     def __init__(self, name: str, price: float, quantity: int = 0):
         # Run validations to the received arguments
         assert price >= 0, f"Price {price} is not greate or equal to than zero!"
@@ -19,3 +19,7 @@ print(item1.calculate_total_price())
 item2 = Item("Laptop", 1000, 3)
 item2.has_numpad = False
 print(item2.calculate_total_price())
+
+print(f"Pay {Item.pay_rate} after 20% discount")
+print(f"Pay {item1.pay_rate} after 20% discount")
+print(f"Pay {item2.pay_rate} after 20% discount")
