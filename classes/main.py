@@ -14,11 +14,12 @@ class Item:
         return self.price * self.quantity
 
     def apply_discount(self):
-        return self.calculate_total_price() * self.pay_rate
+        self.price *= Item.pay_rate
 
 item1 = Item("Phone", 100, 2)
 print(f"Total price : $ {item1.calculate_total_price()}")
-print(f"Price with {1 - item1.pay_rate:.2f}% discount : $ {item1.apply_discount()}")
+item1.apply_discount()
+print(f"Price with {1 - item1.pay_rate:.2f}% discount : $ {item1.price}")
 
 #item2 = Item("Laptop", 1000, 3)
 #item2.has_numpad = False
