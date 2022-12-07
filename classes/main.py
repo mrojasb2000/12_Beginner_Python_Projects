@@ -20,6 +20,7 @@ item2 = Item("Laptop", 1000, 3)
 item2.has_numpad = False
 print(item2.calculate_total_price())
 
-print(f"Pay {Item.pay_rate} after 20% discount")
-print(f"Pay {item1.pay_rate} after 20% discount")
-print(f"Pay {item2.pay_rate} after 20% discount")
+# All the attributes from class level
+print(Item.__dict__)
+# All the attributes from instance level
+print(item1.__dict__)
