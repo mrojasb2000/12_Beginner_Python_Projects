@@ -17,8 +17,8 @@ class Item:
         return self.calculate_total_price() * self.pay_rate
 
 item1 = Item("Phone", 100, 2)
-print(item1.calculate_total_price())
-print(item1.apply_discount())
+print(f"Total price : $ {item1.calculate_total_price()}")
+print(f"Price with {1 - item1.pay_rate:.2f}% discount : $ {item1.apply_discount()}")
 
 #item2 = Item("Laptop", 1000, 3)
 #item2.has_numpad = False
