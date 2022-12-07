@@ -13,14 +13,18 @@ class Item:
     def calculate_total_price(self):
         return self.price * self.quantity
 
-item1 = Item("Phone", 100, 1)
+    def apply_discount(self):
+        return self.calculate_total_price() * self.pay_rate
+
+item1 = Item("Phone", 100, 2)
 print(item1.calculate_total_price())
+print(item1.apply_discount())
 
-item2 = Item("Laptop", 1000, 3)
-item2.has_numpad = False
-print(item2.calculate_total_price())
-
-# All the attributes from class level
-print(Item.__dict__)
-# All the attributes from instance level
-print(item1.__dict__)
+#item2 = Item("Laptop", 1000, 3)
+#item2.has_numpad = False
+#print(item2.calculate_total_price())
+#
+## All the attributes from class level
+#print(Item.__dict__)
+## All the attributes from instance level
+#print(item1.__dict__)
